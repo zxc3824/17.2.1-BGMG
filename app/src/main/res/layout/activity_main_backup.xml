@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <!--첫번째 이미지-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="400dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="false"
+        android:background="@drawable/main_image1"
+        android:layout_above="@+id/button" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView">
+
+        <!--주문하기 버튼-->
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="?android:attr/colorPressedHighlight"
+            android:onClick="startOrder"
+            android:text="주문하기 >"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <!--주문 내역 버튼-->
+        <Button
+            android:id="@+id/btnResult"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="?android:attr/colorMultiSelectHighlight"
+            android:onClick="startResult"
+            android:text="내역보기 >"
+            android:textColor="@android:color/white"
+            android:textSize="20dp" />
+
+        <!--두번째 이미지-->
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/main_image2" />
+
+    </LinearLayout>
+
+    <!--장식용-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:background="@android:color/holo_orange_dark"
+        android:layout_above="@+id/txtState"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--주문 현황표시-->
+    <TextView
+        android:id="@+id/txtState"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_red_light"
+        android:gravity="center_vertical"
+        android:text="@string/state_unordered"
+        android:textColor="@android:color/white"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+</RelativeLayout>

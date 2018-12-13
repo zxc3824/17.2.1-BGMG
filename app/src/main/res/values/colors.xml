@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#303030</color>
+    <color name="colorPrimaryDark">#211E1A</color>
+    <color name="colorAccent">#4081FF</color>
+
+    <color name="colorText">#303030</color>
+    <color name="colorDivider">#f0f0f0</color>
+    <color name="colorBackground">#ffffff</color>
+    <color name="colorClear">#00ffffff</color>
+
+    <color name="pastel_red">#e75037</color>
+    <color name="pastel_orange">#f6cd52</color>
+    <color name="pastel_orange_dark">#f1c84a</color>
+    <color name="pastel_white">#f8f7f5</color>
+    <color name="pastel_green">#44af72</color>
+    <color name="pastel_basic">#eddfa5</color>
+
+    <color name="background">@color/pastel_basic</color>
+    <color name="point">@color/pastel_red</color>
+    <color name="button">@color/pastel_green</color>
+    <color name="object">@color/pastel_orange_dark</color>
+    <color name="text">@color/pastel_white</color>
+</resources>

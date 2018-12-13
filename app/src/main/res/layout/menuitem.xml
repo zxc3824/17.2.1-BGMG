@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <!--빼기 버튼-->
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="206dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_toLeftOf="@+id/btn_plus"
+        android:layout_toRightOf="@+id/btn_minus">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--메뉴 이미지-->
+            <ImageView
+                android:id="@+id/iv_icon"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/menu_single_chicken" />
+        </RelativeLayout>
+
+        <!--메뉴 이름-->
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="불고기버거"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="18dp" />
+
+        <!--메뉴 가격-->
+        <TextView
+            android:id="@+id/tv_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="$ 3,500"
+            android:textAlignment="center"
+            android:textColor="@color/colorText"
+            android:textSize="15dp" />
+
+        <!--주문 개수-->
+        <TextView
+            android:id="@+id/tv_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:inputType="number"
+            android:text="0"
+            android:textAlignment="center"
+            android:textColor="@color/colorText" />
+
+    </LinearLayout>
+
+    <!--더하기 버튼-->
+
+    <Button
+        android:id="@+id/btn_minus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorClear"
+        android:text="-"
+        android:textColor="@color/colorText"
+        android:textSize="80dp" />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignBottom="@+id/linearLayout2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorClear"
+        android:text="+"
+        android:textColor="@color/colorText"
+        android:textSize="80dp" />
+
+    <!--메뉴 구분 이미지-->
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="50dp"
+        android:layout_height="3dp"
+        android:background="@color/colorDivider"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
